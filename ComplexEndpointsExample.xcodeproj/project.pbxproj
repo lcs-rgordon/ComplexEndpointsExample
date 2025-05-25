@@ -11,6 +11,7 @@
 		81C38B452DE35384008BDC67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C38B402DE35384008BDC67 /* Assets.xcassets */; };
 		81C38B462DE35384008BDC67 /* ComplexEndpointsExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38B412DE35384008BDC67 /* ComplexEndpointsExampleApp.swift */; };
 		81C38B472DE35384008BDC67 /* AuthorSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38B422DE35384008BDC67 /* AuthorSearchView.swift */; };
+		81C38B4C2DE35C36008BDC67 /* AuthorSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38B4B2DE35C36008BDC67 /* AuthorSearchResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		81C38B402DE35384008BDC67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81C38B412DE35384008BDC67 /* ComplexEndpointsExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexEndpointsExampleApp.swift; sourceTree = "<group>"; };
 		81C38B422DE35384008BDC67 /* AuthorSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorSearchView.swift; sourceTree = "<group>"; };
+		81C38B4B2DE35C36008BDC67 /* AuthorSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorSearchResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		81C38B482DE35386008BDC67 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				81C38B4B2DE35C36008BDC67 /* AuthorSearchResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C38B4C2DE35C36008BDC67 /* AuthorSearchResponse.swift in Sources */,
 				81C38B462DE35384008BDC67 /* ComplexEndpointsExampleApp.swift in Sources */,
 				81C38B472DE35384008BDC67 /* AuthorSearchView.swift in Sources */,
 			);
