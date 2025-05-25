@@ -11,7 +11,7 @@ import SwiftUI
 struct ComplexEndpointsExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AuthorSearchView()
         }
     }
 }
