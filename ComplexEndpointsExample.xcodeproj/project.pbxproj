@@ -12,6 +12,7 @@
 		81C38B462DE35384008BDC67 /* ComplexEndpointsExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38B412DE35384008BDC67 /* ComplexEndpointsExampleApp.swift */; };
 		81C38B472DE35384008BDC67 /* AuthorSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38B422DE35384008BDC67 /* AuthorSearchView.swift */; };
 		81C38B4C2DE35C36008BDC67 /* AuthorSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38B4B2DE35C36008BDC67 /* AuthorSearchResponse.swift */; };
+		81C38B512DE3637E008BDC67 /* Logger.swift in Resources */ = {isa = PBXBuildFile; fileRef = 81C38B502DE3637E008BDC67 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		81C38B412DE35384008BDC67 /* ComplexEndpointsExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexEndpointsExampleApp.swift; sourceTree = "<group>"; };
 		81C38B422DE35384008BDC67 /* AuthorSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorSearchView.swift; sourceTree = "<group>"; };
 		81C38B4B2DE35C36008BDC67 /* AuthorSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorSearchResponse.swift; sourceTree = "<group>"; };
+		81C38B502DE3637E008BDC67 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				81C38B412DE35384008BDC67 /* ComplexEndpointsExampleApp.swift */,
+				81C38B4F2DE3636D008BDC67 /* Logging */,
 				81C38B482DE35386008BDC67 /* Model */,
 				81C38B4A2DE35391008BDC67 /* ViewModels */,
 				81C38B492DE3538A008BDC67 /* Views */,
@@ -92,6 +95,14 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		81C38B4F2DE3636D008BDC67 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				81C38B502DE3637E008BDC67 /* Logger.swift */,
+			);
+			path = Logging;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +168,7 @@
 			files = (
 				81C38B442DE35384008BDC67 /* Preview Assets.xcassets in Resources */,
 				81C38B452DE35384008BDC67 /* Assets.xcassets in Resources */,
+				81C38B512DE3637E008BDC67 /* Logger.swift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
