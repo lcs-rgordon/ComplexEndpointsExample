@@ -15,6 +15,7 @@
 		81C38B532DE363DF008BDC67 /* AuthorSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38B522DE363DF008BDC67 /* AuthorSearchViewModel.swift */; };
 		81C38B542DE37102008BDC67 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38B502DE3637E008BDC67 /* Logger.swift */; };
 		81C38B572DE37BA1008BDC67 /* AuthorDocumentationResponseItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38B562DE37BA1008BDC67 /* AuthorDocumentationResponseItemView.swift */; };
+		81C38B802DE3DD8D008BDC67 /* AuthorDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38B7F2DE3DD84008BDC67 /* AuthorDetailResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		81C38B502DE3637E008BDC67 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		81C38B522DE363DF008BDC67 /* AuthorSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorSearchViewModel.swift; sourceTree = "<group>"; };
 		81C38B562DE37BA1008BDC67 /* AuthorDocumentationResponseItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorDocumentationResponseItemView.swift; sourceTree = "<group>"; };
+		81C38B7F2DE3DD84008BDC67 /* AuthorDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorDetailResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		81C38B482DE35386008BDC67 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				81C38B7F2DE3DD84008BDC67 /* AuthorDetailResponse.swift */,
 				81C38B4B2DE35C36008BDC67 /* AuthorSearchResponse.swift */,
 			);
 			path = Model;
@@ -192,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C38B802DE3DD8D008BDC67 /* AuthorDetailResponse.swift in Sources */,
 				81C38B572DE37BA1008BDC67 /* AuthorDocumentationResponseItemView.swift in Sources */,
 				81C38B542DE37102008BDC67 /* Logger.swift in Sources */,
 				81C38B4C2DE35C36008BDC67 /* AuthorSearchResponse.swift in Sources */,
