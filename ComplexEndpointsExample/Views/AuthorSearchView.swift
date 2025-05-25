@@ -24,8 +24,9 @@ struct AuthorSearchView: View {
                 // Is there a response yet, from which to show results?
                 if let currentResponse = viewModel.currentResponse {
                     
-                    // Yes, so show those results
-                    Text("To be implemented")
+                    List(currentResponse.docs) { author in
+                        Text(author.name)
+                    }
                     
                 } else {
                     
@@ -39,6 +40,11 @@ struct AuthorSearchView: View {
                 }
             }
             .searchable(text: $searchText, prompt: "Enter name here")
+            .onSubmit(of: .search) {
+                Task {
+                    await viewModel.fetchResults(for: searchText)
+                }
+            }
             .navigationTitle("Author Search")
         }
     }

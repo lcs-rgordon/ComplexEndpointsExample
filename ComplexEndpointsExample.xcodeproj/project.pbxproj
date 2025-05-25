@@ -12,8 +12,8 @@
 		81C38B462DE35384008BDC67 /* ComplexEndpointsExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38B412DE35384008BDC67 /* ComplexEndpointsExampleApp.swift */; };
 		81C38B472DE35384008BDC67 /* AuthorSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38B422DE35384008BDC67 /* AuthorSearchView.swift */; };
 		81C38B4C2DE35C36008BDC67 /* AuthorSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38B4B2DE35C36008BDC67 /* AuthorSearchResponse.swift */; };
-		81C38B512DE3637E008BDC67 /* Logger.swift in Resources */ = {isa = PBXBuildFile; fileRef = 81C38B502DE3637E008BDC67 /* Logger.swift */; };
 		81C38B532DE363DF008BDC67 /* AuthorSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38B522DE363DF008BDC67 /* AuthorSearchViewModel.swift */; };
+		81C38B542DE37102008BDC67 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38B502DE3637E008BDC67 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -171,7 +171,6 @@
 			files = (
 				81C38B442DE35384008BDC67 /* Preview Assets.xcassets in Resources */,
 				81C38B452DE35384008BDC67 /* Assets.xcassets in Resources */,
-				81C38B512DE3637E008BDC67 /* Logger.swift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C38B542DE37102008BDC67 /* Logger.swift in Sources */,
 				81C38B4C2DE35C36008BDC67 /* AuthorSearchResponse.swift in Sources */,
 				81C38B462DE35384008BDC67 /* ComplexEndpointsExampleApp.swift in Sources */,
 				81C38B472DE35384008BDC67 /* AuthorSearchView.swift in Sources */,
