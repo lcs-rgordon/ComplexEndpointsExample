@@ -1,5 +1,5 @@
 //
-//  AuthorSearchViewModel.swift
+//  AuthorDetailViewModel.swift
 //  ComplexEndpointsExample
 //
 //  Created by Russell Gordon on 2025-05-25.
@@ -9,26 +9,30 @@ import Foundation
 import OSLog
 
 @Observable
-class AuthorSearchViewModel {
+class AuthorDetailViewModel {
     
     // MARK: Stored properties
     
     // Whatever response has most recently been received
     // from the endpoint
-    var currentResponse: AuthorSearchResponse?
+    var currentResponse: AuthorDetailResponse?
     
     // MARK: Initializer(s)
-    init() {
+    init(forAuthorWithId id: String) {
         
-        // When the view model is first created, there
-        // will be no search active, so the current response
-        // from the endpoint won't exist yet (it will be nil)
+        // Initially, we won't have details yet, so set the property to nil
         self.currentResponse = nil
+        
+        // Go out and fetch details for this author
+        Task {
+            await self.fetchDetails(forAuthorWithId: id)
+        }
     }
     
     // MARK: Function(s)
        
-    // This retrieves a response for a author search (by name) from the endpoint
+    // This retrieves a response providing details for a given author,
+    // based on their unique identifier in the Open Library system.
     //
     // "async" means it is an asynchronous function.
     //
@@ -36,22 +40,25 @@ class AuthorSearchViewModel {
     // in our app. Since this function might take a while to complete
     // this ensures that other parts of our app, such as the user
     // interface, won't "freeze up" while this function does it's job.
-    func fetchResults(for providedAuthorName: String) async {
+    //
+    // "private" means this function can only be called inside this class.
+    // The view will never need to call this function, so to prevent
+    // unintentional use of this function from the view, we hide it by marking
+    // it as "private".
+    private func fetchDetails(forAuthorWithId id: String) async {
         
         // 1. Attempt to create a URL from the required endpoint
         //
         //    e.g.:
         //
-        //    https://openlibrary.org/search/authors.json?q=margaret%20atwood
+        //    https://openlibrary.org/authors/OL52922A.json
         //
-        //    SCHEME     HOST             PATH               QUERY ITEM(S)
+        //    SCHEME     HOST               PATH
         var urlComponents = URLComponents()
         urlComponents.scheme = "https"
         urlComponents.host = "openlibrary.org"
-        urlComponents.path = "/search/authors.json"
-        urlComponents.queryItems = [
-            URLQueryItem(name: "q", value: providedAuthorName)
-        ]
+        urlComponents.path = "/authors/\(id).json"          // Use the provided id to
+                                                            // construct the path
         let endpoint = urlComponents.url!.absoluteString
         Logger.dataRetrieval.info("Assembled endpoint address is: \(endpoint).")
         guard let url = URL(string: endpoint) else {
@@ -83,7 +90,7 @@ class AuthorSearchViewModel {
             
             // Use the decoder object to convert the raw data
             // into an instance of our Swift data type
-            let decodedData = try decoder.decode(AuthorSearchResponse.self, from: data)
+            let decodedData = try decoder.decode(AuthorDetailResponse.self, from: data)
             
             // If we got here, decoding succeeded,
             // return the instance of our data type
