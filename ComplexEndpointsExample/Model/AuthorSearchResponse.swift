@@ -42,3 +42,20 @@ struct AuthorDocumentationResponse: Identifiable, Codable {
         
     }
 }
+
+// Example data for previews
+let firstExample = AuthorDocumentationResponse(
+    id: "OL52922A",
+    name: "Margaret Atwood",
+    birthDate: "18 November 1939",
+    topWork: "The Handmaid's Tale",
+    workCount: 671
+)
+
+let secondExample = AuthorDocumentationResponse(
+    id: "OL1922978A",
+    name: "William Atwood",
+    birthDate: nil,
+    topWork: "The antiquity and justice of an oath of abjuration",
+    workCount: 28
+)

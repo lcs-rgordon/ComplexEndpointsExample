@@ -25,7 +25,7 @@ struct AuthorSearchView: View {
                 if let currentResponse = viewModel.currentResponse {
                     
                     List(currentResponse.docs) { author in
-                        Text(author.name)
+                        AuthorDocumentationResponseItemView(author: author)
                     }
                     
                 } else {
