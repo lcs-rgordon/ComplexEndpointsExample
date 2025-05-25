@@ -27,7 +27,7 @@ struct AuthorDocumentationResponse: Identifiable, Codable {
     // MARK: Stored properties
     let id: String
     let name: String
-    let birthDate: String
+    let birthDate: String?
     let topWork: String
     let workCount: Int
     
