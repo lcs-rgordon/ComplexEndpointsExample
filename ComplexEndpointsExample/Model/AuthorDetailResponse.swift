@@ -14,7 +14,6 @@ struct AuthorDetailResponse: Codable {
     let links: [AuthorLinkResponse]?
     let fullName: String?
     let birthDate: String?
-//    let biography: String?
     
     // MARK: Enumeration(s)
     enum CodingKeys: String, CodingKey {
@@ -23,7 +22,6 @@ struct AuthorDetailResponse: Codable {
         case links
         case fullName = "fuller_name"
         case birthDate = "birth_date"
-//        case biography = "bio"
     }
 }
 

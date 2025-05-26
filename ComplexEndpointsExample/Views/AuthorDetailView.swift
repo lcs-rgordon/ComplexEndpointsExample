@@ -31,10 +31,6 @@ struct AuthorDetailView: View {
                     LabelAndValueView(label: "Date of birth", value: birthDate)
                 }
 
-//                if let biography = currentResponse.biography {
-//                    LabelAndValueView(label: "Biography", value: biography)
-//                }
-
                 Spacer()
             } else {
                 ProgressView()
