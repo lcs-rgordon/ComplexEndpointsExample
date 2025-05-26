@@ -11,10 +11,10 @@ struct AuthorDetailResponse: Codable {
     
     // MARK: Stored properties
     let name: String
-    let links: [AuthorLinkResponse]
+    let links: [AuthorLinkResponse]?
     let fullName: String?
     let birthDate: String?
-    let biography: String?
+//    let biography: String?
     
     // MARK: Enumeration(s)
     enum CodingKeys: String, CodingKey {
@@ -23,7 +23,7 @@ struct AuthorDetailResponse: Codable {
         case links
         case fullName = "fuller_name"
         case birthDate = "birth_date"
-        case biography = "bio"
+//        case biography = "bio"
     }
 }
 

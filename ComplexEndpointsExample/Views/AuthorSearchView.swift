@@ -25,7 +25,15 @@ struct AuthorSearchView: View {
                 if let currentResponse = viewModel.currentResponse {
                     
                     List(currentResponse.docs) { author in
-                        AuthorDocumentationResponseItemView(author: author)
+                        NavigationLink {
+                            AuthorDetailView(
+                                viewModel: AuthorDetailViewModel(forAuthorWithId: author.id),
+                                authorName: author.name
+                            )
+                        } label: {
+                            AuthorDocumentationResponseItemView(author: author)
+                        }
+
                     }
                     
                 } else {

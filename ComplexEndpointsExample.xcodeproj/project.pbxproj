@@ -17,6 +17,8 @@
 		81C38B572DE37BA1008BDC67 /* AuthorDocumentationResponseItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38B562DE37BA1008BDC67 /* AuthorDocumentationResponseItemView.swift */; };
 		81C38B802DE3DD8D008BDC67 /* AuthorDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38B7F2DE3DD84008BDC67 /* AuthorDetailResponse.swift */; };
 		81C38B822DE3E06D008BDC67 /* AuthorDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38B812DE3E063008BDC67 /* AuthorDetailViewModel.swift */; };
+		81C38B842DE3E429008BDC67 /* AuthorDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38B832DE3E429008BDC67 /* AuthorDetailView.swift */; };
+		81C38B862DE3E662008BDC67 /* LabelAndValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38B852DE3E662008BDC67 /* LabelAndValueView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		81C38B562DE37BA1008BDC67 /* AuthorDocumentationResponseItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorDocumentationResponseItemView.swift; sourceTree = "<group>"; };
 		81C38B7F2DE3DD84008BDC67 /* AuthorDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorDetailResponse.swift; sourceTree = "<group>"; };
 		81C38B812DE3E063008BDC67 /* AuthorDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorDetailViewModel.swift; sourceTree = "<group>"; };
+		81C38B832DE3E429008BDC67 /* AuthorDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorDetailView.swift; sourceTree = "<group>"; };
+		81C38B852DE3E662008BDC67 /* LabelAndValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAndValueView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			children = (
 				81C38B552DE37B7F008BDC67 /* Helpers */,
 				81C38B422DE35384008BDC67 /* AuthorSearchView.swift */,
+				81C38B832DE3E429008BDC67 /* AuthorDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 		81C38B552DE37B7F008BDC67 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				81C38B852DE3E662008BDC67 /* LabelAndValueView.swift */,
 				81C38B562DE37BA1008BDC67 /* AuthorDocumentationResponseItemView.swift */,
 			);
 			path = Helpers;
@@ -198,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C38B862DE3E662008BDC67 /* LabelAndValueView.swift in Sources */,
 				81C38B822DE3E06D008BDC67 /* AuthorDetailViewModel.swift in Sources */,
 				81C38B802DE3DD8D008BDC67 /* AuthorDetailResponse.swift in Sources */,
 				81C38B572DE37BA1008BDC67 /* AuthorDocumentationResponseItemView.swift in Sources */,
@@ -205,6 +212,7 @@
 				81C38B4C2DE35C36008BDC67 /* AuthorSearchResponse.swift in Sources */,
 				81C38B462DE35384008BDC67 /* ComplexEndpointsExampleApp.swift in Sources */,
 				81C38B472DE35384008BDC67 /* AuthorSearchView.swift in Sources */,
+				81C38B842DE3E429008BDC67 /* AuthorDetailView.swift in Sources */,
 				81C38B532DE363DF008BDC67 /* AuthorSearchViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
